@@ -22,7 +22,7 @@ fonts in use --> browse fonts and see what they look like in use
   --fs-300: 0.875rem;
   --fs-400: 1rem;
   --fs-500: 2.5rem;
-  --fs-600: 3rem;
+  --fs-600: 5rem;
 
   --fs-heading: var(--fs-600);
   --fs-body: var(--fs-500);
@@ -32,12 +32,12 @@ fonts in use --> browse fonts and see what they look like in use
 
 }
 
-/* Box sizing rules */
+/* Box sizing rules 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+}*/
 
 /* Remove default margin */
 *{
@@ -63,8 +63,7 @@ body{
 }
 /* Set core body defaults */
 body {
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  text-rendering: optimizeSpeed; 
 }
 
 /* A elements that don't have a class get default styles */
@@ -76,8 +75,13 @@ a:not([class]) {
 img,
 picture,
 svg {
-  max-width: 100%;
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* max-width: 100%;
   display: block;
+   */
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -106,20 +110,102 @@ select {
 
 /* Utility classes*/
 
-.main-page-name{
+.main-grid{
+  
+  /* colors and font*/
+  background-color: var(--clr-butter);
   color: var(--clr-raisin);
   font-size: var(--fs-heading);
-  font-family: var(--ff-primary);
+  font-family: var(--ff-primary);   
 
-}
-
-.bg-main{
-  background-color: var(--clr-butter);
-}
-
-.confetti{
-  float: left;
-  box-sizing: border-box;
+  /* set up 8x8 grid*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh;
+  grid-template-rows: repeat(5, 1fr);
+  /* width: fit-content;
   position: relative;
+  text-align: center; */
+
+  /* grid-template-areas: "#Marketing confetti confetti confetti confetti confetti confetti confetti"
+                      "confetti confetti confetti confetti confetti confetti confetti confetti"
+                      "confetti confetti confetti confetti confetti confetti confetti confetti"
+                      "confetti confetti confetti confetti confetti confetti confetti confetti"
+                      "confetti confetti confetti confetti confetti confetti confetti confetti"
+                      "confetti confetti confetti confetti h1 h1" */
+                      
 }
+
+h1{
+  
+  grid-column: -1/-6;
+  grid-row: -1/-2;
+  text-align: right;
+  z-index: 0; /* sits above the images */ 
+  align-self: center;
+}
+
+.confetti {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow:visible;
+  align-self: stretch;  /* fills the full row height */
+  justify-self: stretch; /* fills the full column width */
+}
+
+.confetti img,
+.confetti svg {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* or cover if you want it to crop and fill */
+  display: block;
+}
+
+/* fig items */
+
+#fig_blob{
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+
+/* leaf items */
+
+#leaf_star{
+  grid-column: 4 / 6;
+  grid-row: 1 / 3;
+}
+
+#leaf_star2{
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+/* tote items */
+
+#tote_star{
+  grid-column: 1 / 3;
+  grid-row: 2 / 4;
+}
+
+#tote_star2{
+  grid-column: 5 / 6;
+  grid-row: 3 / 4;
+}
+
+/* cardigan items */
+#cardigan_blob2{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+#cardigan_blob{
+  grid-column: 4 / 5;
+  grid-row: 3 / 6;
+}
+
+
+
+
+
+
 

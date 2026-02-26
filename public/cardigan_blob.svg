@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="171mm"
-   height="170mm"
-   viewBox="0 0 171 170"
+   width="137mm"
+   height="139mm"
+   viewBox="0 0 137 139"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
-   sodipodi:docname="fig_blob.svg"
+   sodipodi:docname="cardigan_blog.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@
        id="path-effect7"
        is_visible="true"
        lpeversion="1"
-       nodesatellites_param="F,0,0,1,0,19.907808,0,1 @ F,0,0,1,0,13.932287,0,1 @ F,0,0,1,0,19.058449,0,1 @ F,0,0,1,0,19.913257,0,1 @ F,0,0,1,0,35.446058,0,1 @ F,0,0,1,0,20.643062,0,1 @ F,0,0,1,0,14.722285,0,1"
+       nodesatellites_param="F,0,0,1,0,19.907808,0,1 @ F,0,0,1,0,21.421326,0,1 @ F,0,0,1,0,16.574734,0,1 @ F,0,0,1,0,60.207086,0,1 @ F,0,0,1,0,21.760331,0,1 @ F,0,0,1,0,43.565931,0,1 @ F,0,0,1,0,49.578918,0,1"
        radius="0"
        unit="px"
        method="auto"
@@ -53,10 +53,10 @@
        hide_knots="false" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : 21.499915 : 1"
-       inkscape:vp_y="0 : 999.9999 : 0"
-       inkscape:vp_z="210.00004 : 21.499915 : 1"
-       inkscape:persp3d-origin="105.00001 : -27.999997 : 1"
+       inkscape:vp_x="0 : -9.5000869 : 1"
+       inkscape:vp_y="0 : 999.99994 : 0"
+       inkscape:vp_z="210.00007 : -9.5000869 : 1"
+       inkscape:persp3d-origin="105.00001 : -59.000002 : 1"
        id="perspective1" />
   </defs>
   <g
@@ -65,7 +65,7 @@
      id="layer1">
     <path
        sodipodi:type="star"
-       style="fill:#ca9f91;fill-opacity:1;stroke:#ca9f91;stroke-width:0.264583;stroke-opacity:1"
+       style="fill:#bbbb91;fill-opacity:1;stroke:none;stroke-width:0.264583;stroke-opacity:1"
        id="path6"
        inkscape:flatsided="true"
        sodipodi:sides="7"
@@ -77,10 +77,10 @@
        sodipodi:arg2="0.98306846"
        inkscape:rounded="0"
        inkscape:randomized="0"
-       d="m 90.221477,125.02637 -32.246608,21.48494 a 28.930692,28.930692 172.03996 0 1 -24.863223,3.47662 L -4.6002974,137.91316 A 39.575277,39.575277 43.468531 0 1 -29.524184,114.28728 L -41.471201,82.864923 a 41.350304,41.350304 94.897103 0 1 3.063161,-35.751464 l 8.773366,-14.828225 A 73.604498,73.604498 146.32567 0 1 23.519433,-3.129747 L 39.859938,-5.4146347 A 42.86576,42.86576 17.754246 0 1 75.285852,5.928184 l 27.014858,25.607962 a 30.57114,30.57114 69.182817 0 1 9.42795,24.796828 l -3.24039,37.819943 A 41.338989,41.338989 120.61139 0 1 90.221477,125.02637 Z"
-       inkscape:transform-center-x="-1.6487943"
-       inkscape:transform-center-y="1.6487943"
-       transform="translate(51.594595,11.998742)"
+       d="m 90.221477,125.02637 -26.01421,17.33248 a 44.481842,44.481842 172.03996 0 1 -38.227981,5.34541 L -6.9657211,137.15579 A 34.41779,34.41779 43.468531 0 1 -28.641504,116.60885 120.68586,120.68586 95.892522 0 1 -17.889919,12.434944 35.756968,35.756968 153.86154 0 1 9.9655697,-1.2345144 L 17.157933,-2.2402203 A 90.465588,90.465588 17.754246 0 1 91.922177,21.698111 82.253623,82.253623 76.361061 0 1 108.75306,91.062367 l -0.26479,3.09055 A 41.338989,41.338989 120.61139 0 1 90.221477,125.02637 Z"
+       inkscape:transform-center-x="1.9045914"
+       inkscape:transform-center-y="0.32620513"
+       transform="matrix(0.38970439,0.60343864,-0.60372255,0.38952112,95.554841,18.435798)"
        inkscape:path-effect="#path-effect7" />
   </g>
 </svg>
