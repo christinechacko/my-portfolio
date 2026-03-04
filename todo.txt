@@ -1,0 +1,1 @@
+make name on homepage responsive to window size
