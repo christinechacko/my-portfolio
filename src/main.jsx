@@ -37,10 +37,10 @@ const projects = {
       {
         label: " ",
         grid: [
-                { src: "mouser.png", caption: "brand partnership", url: "https://www.youtube.com/watch?v=0kiR3Qierq8" },
-                { src: "tech_article.png", caption: "technical article", url: "https://www.ti.com/lit/ta/ssztd45/ssztd45.pdf" },
-                { src: "blog.png", caption: "partner blog", url: "https://www.allaboutcircuits.com/industry-articles/six-misconceptions-about-power-modulessay-goodbye-to-trade-offs/" },
-                { src: "webinar.png", caption: "product webinar", url: "https://event.on24.com/wcc/r/4429693/CCB2680E454459DACC288C924893AE23" }
+                { src: "/public/mouser.png", caption: "brand partnership", url: "https://www.youtube.com/watch?v=0kiR3Qierq8" },
+                { src: "/public/tech_article.png", caption: "technical article", url: "https://www.ti.com/lit/ta/ssztd45/ssztd45.pdf" },
+                { src: "/public/blog.png", caption: "partner blog", url: "https://www.allaboutcircuits.com/industry-articles/six-misconceptions-about-power-modulessay-goodbye-to-trade-offs/" },
+                { src: "/public/webinar.png", caption: "product webinar", url: "https://event.on24.com/wcc/r/4429693/CCB2680E454459DACC288C924893AE23" }
         ]
       }
     ]
