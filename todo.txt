@@ -1,1 +1,93 @@
 make name on homepage responsive to window size
+
+old marketing page code from claude. i like the section creation but thats about it
+
+<div class="hero">
+        <img class="hero-svg" src="/butter_blob_marketing.svg" alt="">
+        <h1 class="page-title">marketing</h1>
+        <p class="page-intro">I think good marketing is really just good listening. Understanding what people need, finding the most honest way to show them you have it, and getting out of the way.</p>
+    </div>
+
+    <section>
+    <p class="section-label">school of thought</p>
+    <div class="philosophy-row">
+        <p class="philosophy-text">The best product messaging doesn't feel like marketing at all. It starts with the customer's problem, not the product's features. I approach every GTM challenge by first asking who actually needs to be convinced, what they already believe, and what would have to be true for them to act. Everything else follows from there.</p>
+        <div class="headshot-placeholder">your photo here</div>
+    </div>
+    </section>
+
+    <section>
+  <p class="section-label">tech stack</p>
+  <div class="stack-grid">
+    <div class="stack-item">
+      <div class="tool-name">Spotfire</div>
+      <div class="tool-use">Business performance analysis and competitive positioning</div>
+    </div>
+    <div class="stack-item">
+      <div class="tool-name">Seismic</div>
+      <div class="tool-use">Sales enablement and content management</div>
+    </div>
+    <div class="stack-item">
+      <div class="tool-name">HubSpot</div>
+      <div class="tool-use">CRM and campaign tracking</div>
+    </div>
+    <div class="stack-item">
+      <div class="tool-name">Figma</div>
+      <div class="tool-use">Collateral design and visual storytelling</div>
+    </div>
+    <div class="stack-item">
+      <div class="tool-name">Excel</div>
+      <div class="tool-use">ROI modeling and market analysis</div>
+    </div>
+    <div class="stack-item">
+      <div class="tool-name">PowerPoint</div>
+      <div class="tool-use">Keynotes, sales decks, and customer presentations</div>
+    </div>
+  </div>
+    </section>
+
+    <section>
+  <p class="section-label">work</p>
+  <div class="work-list">
+    <a href="#" class="work-item">
+      <div class="work-meta">
+        <span class="work-title">Power Modules and Why You Should Use Them in Your Next Power Design</span>
+        <span class="work-type">Webinar — Texas Instruments & Mouser</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a href="#" class="work-item">
+      <div class="work-meta">
+        <span class="work-title">Power Module Package Types and Their Benefits</span>
+        <span class="work-type">Technical Article — Texas Instruments</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a href="#" class="work-item">
+      <div class="work-meta">
+        <span class="work-title">Six Misconceptions About Power Modules</span>
+        <span class="work-type">Blog Post — All About Circuits</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+    <a href="#" class="work-item">
+      <div class="work-meta">
+        <span class="work-title">Decrease Power-Supply Design Time for Space-Constrained Industrial Applications</span>
+        <span class="work-type">Webinar — Texas Instruments</span>
+      </div>
+      <span class="arrow">→</span>
+    </a>
+  </div>
+</section>
+
+
+css:
+section { margin-bottom: 4rem; }
+
+  .section-label {
+    font-size: var(--fs-title);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 1.5rem;
+  }

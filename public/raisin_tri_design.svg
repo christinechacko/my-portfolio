@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="109mm"
-   height="98mm"
-   viewBox="0 0 109 98"
+   width="150mm"
+   height="150mm"
+   viewBox="0 0 150 150"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
@@ -70,10 +70,10 @@
        hide_knots="false" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : -50.500086 : 1"
-       inkscape:vp_y="0 : 999.9999 : 0"
-       inkscape:vp_z="210.00011 : -50.500086 : 1"
-       inkscape:persp3d-origin="105.00004 : -99.999996 : 1"
+       inkscape:vp_x="0 : 1.4999131 : 1"
+       inkscape:vp_y="0 : 999.99991 : 0"
+       inkscape:vp_z="210.00011 : 1.4999131 : 1"
+       inkscape:persp3d-origin="105.00004 : -47.999997 : 1"
        id="perspective1" />
   </defs>
   <g
@@ -81,10 +81,10 @@
      inkscape:groupmode="layer"
      id="layer1" />
   <path
-     d="M 8.1247248,37.838439 C -20.121006,58.82066 49.062559,81.323442 83.102009,89.666069 117.14145,98.008689 105.13062,45.442636 96.24069,14.731965 87.350752,-15.97871 36.370445,16.856221 8.1247248,37.838439 Z"
-     style="fill:#6a3942;fill-opacity:1;stroke-width:6.79685"
+     d="M 9.5242261,61.654995 C -31.109926,91.839903 68.417168,124.21228 117.38613,136.21393 166.35508,148.21558 149.07637,72.594351 136.28736,28.41415 123.49835,-15.766058 50.158363,31.470093 9.5242261,61.654995 Z"
+     style="fill:#6a3942;fill-opacity:1;stroke-width:9.77791"
      id="path49"
      sodipodi:nodetypes="zzzz"
-     inkscape:transform-center-x="10.181535"
-     inkscape:transform-center-y="-4.5114241" />
+     inkscape:transform-center-x="14.6471"
+     inkscape:transform-center-y="-6.4901113" />
 </svg>

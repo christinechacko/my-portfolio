@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="149mm"
-   height="139mm"
-   viewBox="0 0 149 139"
+   width="150mm"
+   height="150mm"
+   viewBox="0 0 150 150"
    version="1.1"
    id="svg1"
    inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
@@ -28,8 +28,8 @@
      inkscape:cy="267.21476"
      inkscape:window-width="1431"
      inkscape:window-height="768"
-     inkscape:window-x="-14"
-     inkscape:window-y="51"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -70,10 +70,10 @@
        hide_knots="false" />
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="0 : -9.5000874 : 1"
-       inkscape:vp_y="0 : 999.99994 : 0"
-       inkscape:vp_z="210.00004 : -9.5000874 : 1"
-       inkscape:persp3d-origin="105 : -59.000002 : 1"
+       inkscape:vp_x="0 : 1.499913 : 1"
+       inkscape:vp_y="0 : 999.99989 : 0"
+       inkscape:vp_z="210.00003 : 1.499913 : 1"
+       inkscape:persp3d-origin="105 : -47.999999 : 1"
        id="perspective1" />
   </defs>
   <g
@@ -83,7 +83,7 @@
     <g
        id="path7"
        style="opacity:1;fill:#8fadc5;fill-opacity:1"
-       transform="matrix(0.8513917,1.0210023,-1.0722624,0.80817996,122.08245,-58.609841)">
+       transform="matrix(0.88478883,1.0610526,-1.1143235,0.83988204,124.82212,-58.892347)">
       <path
          style="baseline-shift:baseline;display:inline;overflow:visible;vector-effect:none;fill:#8fadc5;fill-opacity:1;stroke:none;enable-background:accumulate;stop-color:#000000;stop-opacity:1"
          d="M 80.030047,139.83195 C 74.437467,149.80353 57.251331,102.81545 54.690932,106.05978 30.045692,137.2882 31.66735,134.93115 27.190107,133.38743 23.077566,131.96947 26.582301,125.37899 41.974526,96.799305 43.958777,93.115026 0.11085533,96.887976 0.83457845,87.712726 1.3309787,81.41944 -2.7219465,85.365495 41.356113,81.211259 45.522286,80.818609 21.452075,51.973195 28.443365,41.888302 34.133273,33.680645 51.911125,74.745168 54.497629,71.52161 78.733642,41.316285 78.72432,40.980314 82.40768,42.966271 c 3.795397,2.046364 4.027761,5.69602 -12.906259,37.106179 -1.985831,3.683429 39.402489,0.320021 39.350129,10.455446 -0.0361,6.990524 -0.36788,4.247145 -39.253477,6.813639 -4.175551,0.275591 17.622794,29.669165 10.431974,42.490415 z"

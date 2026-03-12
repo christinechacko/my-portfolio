@@ -19,15 +19,88 @@
         <a href="/index.html">home</a>
         <!-- <img class="confetti" src="/butter_star_about.svg"> -->
         <a href="/about.html">about</a>
-        <a href="/art.html">art</a>
         <a href="/design.html">design</a>
+        <a href="/contact.html">contact</a>
     </nav>
 
     <div class="confetti" id= "page_logo">
         <img  src="/butter_blob_marketing.svg"><h1 class="page-title">marketing</h1>
       </div>
 
+    <div class="marketing-container">
+    <p class="page-intro">An evolving list of real work and personal projects. Click around!</p>
     
+    <div class="projects-row">
+        <div class="project-card" id="proj-1" onclick="openModal('ti')">
+            <div class="project-thumb"><img src="ti_portfolio.svg" alt="power module campaign"></div>
+            <div class="project-info">
+                <p class="project-type">brand campaign</p>
+                <p class="project-title">power module campaign</p>
+            </div>
+        </div>
+        
+        <div class="project-card" id="proj-2" onclick="openModal('mock')">
+            <div class="project-thumb"><img src="butter_blob_m.svg" alt="brand mockup"></div>
+            <div class="project-info">
+                <p class="project-type">brand mockup</p>
+                <p class="project-title">coming soon!</p>
+            </div>
+        </div>
+
+        <div class="project-card" id="proj-3" onclick="openModal('mock')">
+            <div class="project-thumb"><img src="butter_blob_m.svg" alt="marketing automation"></div>
+            <div class="project-info">
+                <p class="project-type">marketing automation tool</p>
+                <p class="project-title">coming soon!</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="modal-overlay" id="modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="modal-close" onclick="closeModal()">close</button>
+        <!-- <p class="project-type" id="modal-type"></p> -->
+        <h2 id="modal-title">test</h2>
+        <p id="modal-desc"></p>
+        <div id="modal-sections"></div>
+    </div>
+    </div>
+
+        <!-- <div class="carousel-container">
+            <div class="carousel">
+                <div class="group">
+                    <div class="card">GTM strategy and execution</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">technical product storytelling</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">sales enablement</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">market and competative analysis</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">cross-functional collaboration</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">creative thinking</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                </div>
+                <div aria-hidden class="group">
+                    <div class="card">GTM strategy and execution</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">technical product storytelling</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">sales enablement</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">market and competative analysis</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">cross-functional collaboration</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                    <div class="card">creative thinking</div>
+                    <div class="card"><img src="butter_blob_marketing_small.svg"></div>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- modal -->
 
   </body>
 </html>

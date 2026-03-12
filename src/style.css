@@ -21,11 +21,12 @@ fonts in use --> browse fonts and see what they look like in use
   --fw-bold: 900;
 
   
-  --fs-body: 16px;
-  --fs-nav: 28.43px;
-  --fs-title: 37.9px;
-  --fs-button:50.52px;
-  --fs-heading: 82.24px;
+  --fs-body: 18px;
+  --fs-bigger-body:20px;
+  --fs-nav: 30px;
+  --fs-title: 32px;
+  --fs-button:50px;
+  --fs-heading: 95px;
 
 }
 
@@ -36,7 +37,7 @@ fonts in use --> browse fonts and see what they look like in use
 }
 
 *{
-  margin: 1rem;
+  margin: 0;
   padding: 0;
   font: inherit;
 }
@@ -56,27 +57,20 @@ html,
 body{
   height: 100%;
 }
+
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed; 
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+  padding: 2rem;
 }
 
 /* Make images easier to work with */
 img,
 picture,
 svg {
-  
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* max-width: 100%;
-  display: block;
-   */
 }
 
 /* Inherit fonts for inputs and buttons */
@@ -103,18 +97,19 @@ select {
   }
 }
 
- @media (max-width: 700px) {
-    body { padding: 2rem; }
-    .stack-grid { grid-template-columns: 1fr 1fr; }
-    .page-title { font-size: 2.5rem; }
-    .philosophy-row { grid-template-columns: 1fr; }
-    .headshot-placeholder { width: 120px; height: 120px; }
-  }
+@media (max-width: 700px) {
+  body { padding: 2rem; }
+  .stack-grid { grid-template-columns: 1fr 1fr; }
+  .page-title { font-size: 2.5rem; }
+  .philosophy-row { grid-template-columns: 1fr; }
+  .headshot-placeholder { width: 120px; height: 120px; }
+}
 
 
-/* Utility classes*/
+/* ===================== */
+/* Utility / shared      */
+/* ===================== */
 
-/* shared across all pages */
 .page-grid {
   font-size: var(--fs-heading);
   font-family: var(--ff-primary);
@@ -126,11 +121,15 @@ select {
 
 /* per-page theming */
 .home     { background-color: var(--clr-butter); color: var(--clr-raisin); }
-.about    { background-color: var(--clr-tote); color: var(--clr-butter); }
+.about    { background-color: var(--clr-tote);   color: var(--clr-butter); }
 .marketing{ background-color: var(--clr-cardigan); color: var(--clr-butter); }
-.art      { background-color: var(--clr-fig); color: var(--clr-butter); }
+.art      { background-color: var(--clr-fig);    color: var(--clr-butter); }
 .design   { background-color: var(--clr-raisin-lite); color: var(--clr-butter); }
 
+
+/* ===================== */
+/* Homepage confetti nav */
+/* ===================== */
 
 .main-nav{
   font-size: var(--fs-title);
@@ -138,6 +137,7 @@ select {
   position: absolute;
   text-align: center;
   text-decoration: none;
+  z-index: 10;
 }
 
 .main-nav:hover{
@@ -148,111 +148,373 @@ select {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow:visible;
-  align-self: stretch;  /* fills the full row height */
-  justify-self: stretch; /* fills the full column width */
+  overflow: visible;
+  align-self: stretch;
+  justify-self: stretch;
 }
 
 .confetti img,
 .confetti svg {
   width: 100%;
   height: 100%;
-  object-fit: fill; /* or cover if you want it to crop and fill */
+  object-fit: fill;
   display: block;
+  pointer-events: none;
 }
 
+#fig_flower{
+  grid-column: 8/11;
+  grid-row: 1/3;
+  z-index: 3;
+}
+
+#raisin_tri{ 
+  grid-column: 7/9;
+  grid-row: 2/4;
+  z-index: 2;
+}
+
+#cardigan_blob3{ 
+  grid-column: 8/11;
+  grid-row: 3/6;
+  z-index: 2;
+}
+
+#tote_star_about{
+  grid-column: 5/9;
+  grid-row: 2/6;
+  z-index: 1;
+}
+
+/* name on homepage */
 h1{
   grid-column: 1/6;
-  grid-row: 4/5;
+  grid-row: 3/4;
   text-align: left;
   z-index: 3;
   align-self: center;
 }
 
-#fig_flower{
-  grid-column: 9 / 11;
-  grid-row: 1 / 4;
-  z-index: 3;
-}
 
-#raisin_tri{ 
-  grid-column: 7 / 9;
-  grid-row: 3 / 4;
-  z-index: 2;
-}
-#cardigan_blob3{ 
-  grid-column: 8 / 11;
-  grid-row: 3 / 6;
-  z-index: 2;
-}
+/* ===================== */
+/* Aux pages             */
+/* ===================== */
 
-#tote_star_about{
-  grid-column: 4 / 8;
-  grid-row: 2 / 6;
-  z-index: 1;
-}
-
- #leaf_specks2{
-  grid-column: 7 / 9;
-  grid-row: 4 / 5;
-  z-index: 3;
-}
-
-#page_logo{
-  grid-column :1/4;
-  grid-row: 1/2;
-}
-
-
-
-
-
+/* nav bar */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: right;
-    font-size: var(--fs-nav);
-    grid-column: 6/11;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  font-size: var(--fs-nav);
+  grid-column: 6/11;
+  grid-row: 1/2;
+  margin-bottom: 0%;
+}
 
-  nav a {
-    color: var(--clr-butter);
-    text-decoration: none;
-    transition: opacity 1s;
+nav a {
+  color: var(--clr-butter);
+  text-decoration: none;
+  transition: opacity 1s;
+}
 
-  }
+nav a:hover { color: var(--clr-raisin); }
 
-  nav a:hover { color: var(--clr-raisin);}
+/* page logo */
+#page_logo{
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.page-title {
+  z-index: 1;
+  font-size: var(--fs-title);
+  color: var(--clr-butter);
+  position: absolute;
+}
+
+/* intro paragraph */
+.page-intro {
+  font-size: var(--fs-bigger-body);
+  text-align: justify;
+  grid-column: 4/11;
+  grid-row: 2/3;
+  padding: 8%;
+  padding-right: 0%;
+  line-height: 150%;
+}
+
+/* links */
+.body-links{
+  font-size: var(--fs-bigger-body);
+  color: var(--clr-raisin);
+  text-decoration: none;
+  margin: 0;
+}
+
+.body-links:hover{
+  color: var(--clr-butter);
+}
+
+.body-links-contact{
+  font-size: var(--fs-bigger-body);
+  color: var(--clr-tote);
+  text-decoration: none;
+  margin: 0;
+}
+
+.body-links-contact:hover{
+  color: var(--clr-butter);
+}
+
+/* ===================== */
+/* About page        */
+/* ===================== */
+
+#sf{
+  margin-top:2%;
+  grid-column:2/5;
+  grid-row:3/4;
+}
+
+#chicago{
+  margin-top:2%;
+  grid-column:5/8;
+  grid-row:3/4;
+}
+
+#sunset{
+  margin-top:2%;
+  grid-column:8/10;
+  grid-row:3/4;
+}
+
+/* #abstract{
+  grid-column:4/6;
+  grid-row:3/6;
+} */
+
+/* ===================== */
+/* Marketing page        */
+/* ===================== */
+
+.br{
+  gap:10px;
+}
+
+/* wraps intro text + project cards, mirrors .container on contact page */
+.marketing-container {
+  grid-column: 4/11;
+  grid-row: 2/6;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--fs-bigger-body);
+  line-height: 150%;
+}
+
+/* row of project cards inside the container */
+.projects-row {
+  display: flex;
+  gap: 2rem;
+}
+
+/* project cards */
+.project-card {
+  flex: 1;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-card:hover { opacity: 0.7; }
+
+.project-thumb {
+  width: 100%;
+  aspect-ratio: 5/3;
+  overflow: hidden;
+}
+
+.project-thumb img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.project-type {
+  font-size: var(--fs-body);
+  opacity: 0.6;
+  padding-top: 0.5rem;
+}
+
+.project-title {
+  font-size: var(--fs-nav);
+}
 
 
-  .page-title {
-    z-index: 1;
-    font-size: var(--fs-title);
-    color: var(--clr-butter);
-    position: absolute;
-    text-align: center;
-    grid-column :1/4;
-    grid-row: 2/3;
-  }
+/* modal */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+}
 
-  .page-intro {
-    font-size: var(--fs-body);
-    line-height: 1.8;
-    max-width: 600px;
-    font-weight: 300;
-    font-style: italic;
-    position: relative;
-    z-index: 1;
-  }
+.modal-content {
+  background: var(--clr-cardigan);
+  color: var(--clr-butter);
+  padding: 3rem;
+  max-width: 700px;
+  width: 90%;
+  max-height: 85vh;
+  overflow-y: auto;
+}
 
-  section { margin-bottom: 4rem; }
+.modal-close {
+  background: none;
+  border: none;
+  color: var(--clr-butter);
+  font-size: var(--fs-body);
+  cursor: pointer;
+  float: right;
+  position: relative;
+  z-index: 10;
+}
 
-  .section-label {
-    font-size: var(--fs-title);
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    opacity: 0.5;
-    margin-bottom: 1.5rem;
-  }
+#modal-title{
+  font-size: var(--fs-nav);
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#modal-desc{
+  font-size: var(--fs-body);
+  margin-bottom: 1.5rem;
+}
+
+#modal-sections{
+  margin-top: 0.5rem;
+  font-size: var(--fs-body);
+  margin-bottom: 1.5rem;
+}
+
+.modal-section-label {
+  margin-top: 2rem;
+}
+
+.modal-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding-top: 0.5rem;
+}
+
+.modal-grid-item {
+  overflow: hidden;
+}
+
+.modal-grid-item a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.modal-grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: filter 0.3s, outline 0.3s;
+}
+
+.modal-grid-item a:hover img {
+  filter: brightness(0.6); /*dark overlay on hover */
+}
+
+.modal-grid-item figcaption {
+  font-size: var(--fs-body);
+  padding-top: 0.25rem;
+  text-align: center;
+}
 
 
+/* skills carousel (commented out in HTML but kept here) */
+.carousel-container {
+  grid-row: 3/4;
+  grid-column: 1/11;
+  overflow: visible;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
+}
+
+.group {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.card {
+  font-size: var(--fs-nav);
+  white-space: nowrap;
+  padding: 0 .5rem;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+
+/* ===================== */
+/* Contact form          */
+/* ===================== */
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--clr-butter);
+  color: var(--clr-raisin);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: var(--clr-leaf);
+  color: var(--clr-butter);
+}
+
+.inside{
+  font-size: var(--fs-body);
+  background-color: var(--clr-butter);
+  color: var(--clr-raisin-lite);
+}
+
+.container {
+  grid-column: 4/11;
+  grid-row: 2/6;
+  padding: 8%;
+  padding-right: 0%;
+  font-size: var(--fs-bigger-body);
+  line-height: 150%;
+}
+
+.contact-form{
+  padding-top: 5%;
+}
