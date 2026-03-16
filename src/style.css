@@ -21,13 +21,12 @@ fonts in use --> browse fonts and see what they look like in use
   --fw-bold: 900;
 
   
-  --fs-body: 18px;
-  --fs-bigger-body:20px;
-  --fs-nav: 30px;
-  --fs-title: 32px;
-  --fs-button:50px;
-  --fs-heading: 95px;
-
+  --fs-body: clamp(0.9375rem, 1vw + 0.6rem, 1.125rem); /*min:15px, max:18px 390px to 1440px viewport*/
+  --fs-bigger-body:clamp(1rem, 1.2vw + 0.7rem, 1.25rem); /*min:16px, max:20px 390px to 1440px viewport*/
+  --fs-nav: clamp(1.125rem, 1.2vw + 0.75rem, 1.5rem); /*min:18px, max:24px 390px to 1440px viewport*/
+  --fs-title: clamp(1.375rem, 1.8vw + 0.75rem, 2rem); /*min:22px, max:32px 390px to 1440px viewport*/
+  /* --fs-button:clamp(1.5rem, 3.6vw + 0.6rem, 3.125rem); min:24px, max:50px, 390px to 1440px viewport */
+  --fs-heading: clamp(2.625rem, 5.5vw + 1rem, 5.9375rem); /*min:42px, max:95px, 390px to 1440px viewport*/
 }
 
 *,
@@ -206,9 +205,10 @@ nav {
   justify-content: space-between;
   align-items: right;
   font-size: var(--fs-nav);
-  grid-column: 6/11;
+  grid-column: 1/11;
   grid-row: 1/2;
   margin-bottom: 0%;
+  gap: 1rem;
 }
 
 nav a {
@@ -517,4 +517,91 @@ input[type=submit]:hover {
 
 .contact-form{
   padding-top: 5%;
+}
+
+
+
+/* media overrides*/
+
+@media (max-width: 600px) {
+  #fig_flower    { grid-column: 6/10; grid-row: 1/3; }
+  #raisin_tri    { grid-column: 7/11; grid-row: 2/5; }
+  #cardigan_blob3{ grid-column: 3/8; grid-row: 4/6; }
+  #tote_star_about{ grid-column: 1/6; grid-row: 2/4; }
+  h1             { grid-column: 1/11; grid-row: 6/7; text-align: center;}
+
+
+  /* allow pages to scroll instead of being locked to viewport height */
+  .page-grid {
+    height: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+
+  /* nav */
+  nav {
+    grid-column: 1/11;
+    grid-row: 1/2;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  /* page logo */
+  #page_logo {
+    grid-column: 4/8;
+    grid-row: 2/3;
+    padding-top: 1rem;
+  }
+
+  /* intro paragraph */
+  .page-intro {
+    grid-column: 1/11;
+    grid-row: 3/4;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  /* about page photos — stack vertically */
+  #sf {
+    grid-column: 2/10;
+    grid-row: 4/5;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+  }
+
+  #chicago {
+    grid-column: 2/10;
+    grid-row: 5/6;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+  }
+
+  #sunset {
+    grid-column: 2/10;
+    grid-row: 6/7;
+    overflow-y: auto;
+  }
+
+  /* marketing container */
+  .marketing-container {
+    grid-column: 1/11;
+    grid-row: 3/6;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+
+  /* stack project cards vertically */
+  .projects-row {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* contact container */
+  .container {
+    grid-column: 1/11;
+    grid-row: 3/6;
+    padding: 1rem;
+    padding-right: 1rem;
+    overflow-y: auto;
+  }
+
 }
