@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3CD8F32YST"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3CD8F32YST');
+</script>
     <meta charset="UTF-8" />
     <link rel="icon" href="/public/favicon.svg" sizes="any" type="image/svg+xml" />
     <link rel="stylesheet" href="src/style.css">
@@ -61,7 +70,7 @@
     <div class="modal-content" onclick="event.stopPropagation()">
         <button class="modal-close" onclick="closeModal()">close</button>
         <!-- <p class="project-type" id="modal-type"></p> -->
-        <h2 id="modal-title">test</h2>
+        <h2 id="modal-title"></h2>
         <p id="modal-desc"></p>
         <div id="modal-sections"></div>
     </div>
