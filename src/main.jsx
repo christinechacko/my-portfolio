@@ -23,7 +23,7 @@ document.querySelectorAll('.confetti').forEach(img => {
 */
 
 //project modals
-
+ 
 const projects = {
   ti: {
     type: "brand campaign",
