@@ -340,6 +340,17 @@ nav a:hover { color: var(--clr-raisin); }
   font-size: var(--fs-nav);
 }
 
+.project-type,
+.project-title {
+  text-align: center;
+  width: 100%;
+}
+
+.project-info {
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
 
 /* modal */
 .modal-overlay {
